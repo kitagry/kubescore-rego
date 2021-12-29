@@ -1,4 +1,4 @@
-package main
+package cronjob_has_deadline
 
 import data.lib.kubernetes
 
