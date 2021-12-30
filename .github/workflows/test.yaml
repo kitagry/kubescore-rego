@@ -1,0 +1,19 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  conftest:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code into the directory
+      uses: actions/checkout@v2
+    - name: test
+      uses: instrumenta/conftest-action@master
+      run: conftest verify -p . --report full
