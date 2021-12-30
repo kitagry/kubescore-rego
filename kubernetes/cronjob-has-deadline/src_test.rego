@@ -1,4 +1,4 @@
-package main
+package cronjob_has_deadline
 
 empty(value) {
   count(value) == 0

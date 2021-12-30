@@ -24,6 +24,15 @@ format(msg) = msg {
   not is_gatekeeper
 }
 
+format_with_description(msg, description) = gatekeeper_format {
+  is_gatekeeper
+  gatekeeper_format = {"msg": msg, "description": description}
+}
+
+format_with_description(msg, description) = msg {
+  not is_gatekeeper
+}
+
 name = object.metadata.name
 
 kind = object.kind
