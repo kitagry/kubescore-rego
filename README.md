@@ -12,7 +12,7 @@
 - [ ] deployment-has-poddisruptionbudget
 - [ ] pod-networkpolicy
 - [ ] networkpolicy-targets-pod
-- [ ] pod-probes
+- [x] pod-probes
 - [ ] container-security-context
 - [ ] container-security-context-user-group-id
 - [ ] container-security-context-privileged
