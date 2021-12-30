@@ -1,6 +1,11 @@
+## kubescore-rego
+
+Inspired by [kube-score](https://github.com/zegl/kube-score).
+
 ### TODO
 
-- [ ] ingress-targets-service
+#### without combine
+
 - [x] cronjob-has-deadline
 - [x] container-resources
 - [ ] container-resource-requests-equal-limits
@@ -8,24 +13,30 @@
 - [ ] container-memory-requests-equal-limits
 - [x] container-image-tag
 - [x] container-image-pull-policy
-- [ ] statefulset-has-poddisruptionbudget
-- [ ] deployment-has-poddisruptionbudget
 - [ ] pod-networkpolicy
-- [ ] networkpolicy-targets-pod
 - [x] pod-probes
-- [ ] container-security-context
-- [ ] container-security-context-user-group-id
-- [ ] container-security-context-privileged
-- [ ] container-security-context-readonlyrootfilesystem
+- [x] container-security-context
+  - [ ] user-group-id
+  - [x] privileged
+  - [x] readonlyrootfilesystem
 - [ ] container-seccomp-profile
-- [ ] service-targets-pod
 - [ ] service-type
 - [ ] stable-version
 - [ ] deployment-has-host-podantiaffinity
 - [ ] statefulset-has-host-podantiaffinity
-- [ ] deployment-targeted-by-hpa-does-not-have-replicas-configured
 - [ ] statefulset-has-servicename
 - [ ] deployment-pod-selector-labels-match-template-metadata-labels
 - [ ] statefulset-pod-selector-labels-match-template-metadata-labels
 - [ ] label-values
+
+#### with combine
+
+I don't know I will create the following.
+
+- [ ] ingress-targets-service
+- [ ] statefulset-has-poddisruptionbudget
+- [ ] deployment-has-poddisruptionbudget
+- [ ] networkpolicy-targets-pod
+- [ ] service-targets-pod
+- [ ] deployment-targeted-by-hpa-does-not-have-replicas-configured
 - [ ] horizontalpodautoscaler-has-target
