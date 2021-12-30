@@ -16,7 +16,7 @@ Inspired by [kube-score](https://github.com/zegl/kube-score).
 - [ ] pod-networkpolicy
 - [x] pod-probes
 - [x] container-security-context
-  - [ ] user-group-id
+  - [x] user-group-id
   - [x] privileged
   - [x] readonlyrootfilesystem
 - [ ] container-seccomp-profile
