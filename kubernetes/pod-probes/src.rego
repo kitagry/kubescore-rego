@@ -9,7 +9,6 @@ https://github.com/zegl/kube-score/blob/master/README_PROBES.md`
 warn[msg] {
 	kubernetes.containers[container]
 	not container.livenessProbe
-	trace(sprintf("%v", container))
 	msg = kubernetes.format_with_description(sprintf("%s in the %s %s does not have a livenessProbe.", [container.name, kubernetes.kind, kubernetes.name]), no_liveness_description)
 }
 
