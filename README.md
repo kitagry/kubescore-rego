@@ -26,8 +26,9 @@ Inspired by [kube-score](https://github.com/zegl/kube-score).
   - [x] deployment
   - [x] statefulset
 - [ ] statefulset-has-servicename
-- [ ] deployment-pod-selector-labels-match-template-metadata-labels
-- [ ] statefulset-pod-selector-labels-match-template-metadata-labels
+- [x] pod-selector-labels-match-template-metadata-labels
+  - [x] deployment
+  - [x] statefulset
 - [ ] label-values
 
 #### with combine
