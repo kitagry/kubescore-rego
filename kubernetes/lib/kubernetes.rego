@@ -54,11 +54,15 @@ is_pod {
 }
 
 is_job {
-	kind = "CronJob"
+	kind = "Job"
 }
 
 is_cronjob {
 	kind = "CronJob"
+}
+
+is_statefulset {
+	kind = "StatefulSet"
 }
 
 split_image(image) = [image, "latest"] {

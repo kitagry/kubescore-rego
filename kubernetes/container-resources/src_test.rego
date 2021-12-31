@@ -12,11 +12,7 @@ test_job_without_limits {
 	violation with input as {
 		"kind": "Job",
 		"metadata": {"name": "cronjob"},
-		"spec": {"template": {"spec": {"containers": [{
-			"name": "container",
-			"image": "image",
-			"imagePullPolicy": "Always",
-		}]}}},
+		"spec": {"template": {"spec": {"containers": [{}]}}},
 	}
 }
 
@@ -24,14 +20,9 @@ test_cronjob_with_limits {
 	no_violations with input as {
 		"kind": "Job",
 		"metadata": {"name": "cronjob"},
-		"spec": {"template": {"spec": {"containers": [{
-			"name": "container",
-			"image": "image",
-			"imagePullPolicy": "Always",
-			"resouces": {"limits": {
-				"memory": "3Gi",
-				"cpu": "1",
-			}},
-		}]}}},
+		"spec": {"template": {"spec": {"containers": [{"resouces": {"limits": {
+			"memory": "3Gi",
+			"cpu": "1",
+		}}}]}}},
 	}
 }

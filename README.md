@@ -22,8 +22,9 @@ Inspired by [kube-score](https://github.com/zegl/kube-score).
 - [ ] container-seccomp-profile
 - [ ] service-type
 - [ ] stable-version
-- [ ] deployment-has-host-podantiaffinity
-- [ ] statefulset-has-host-podantiaffinity
+- [x] has-host-podantiaffinity
+  - [x] deployment
+  - [x] statefulset
 - [ ] statefulset-has-servicename
 - [ ] deployment-pod-selector-labels-match-template-metadata-labels
 - [ ] statefulset-pod-selector-labels-match-template-metadata-labels
