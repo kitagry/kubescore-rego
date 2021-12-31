@@ -38,31 +38,31 @@ name = object.metadata.name
 kind = object.kind
 
 is_service {
-	kind = "Service"
+	kind == "Service"
 }
 
 is_deployment {
-	kind = "Deployment"
+	kind == "Deployment"
 }
 
 is_daemonset {
-	kind = "DaemonSet"
+	kind == "DaemonSet"
 }
 
 is_pod {
-	kind = "Pod"
+	kind == "Pod"
 }
 
 is_job {
-	kind = "Job"
+	kind == "Job"
 }
 
 is_cronjob {
-	kind = "CronJob"
+	kind == "CronJob"
 }
 
 is_statefulset {
-	kind = "StatefulSet"
+	kind == "StatefulSet"
 }
 
 split_image(image) = [image, "latest"] {
